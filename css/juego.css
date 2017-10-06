@@ -27,19 +27,32 @@ li::before {
   display: table-cell;
   margin: 0;
   vertical-align: top;
-  background-color:
 }
 .col-40 {
   background: rgb(232, 211, 68);
   padding: 30px;
   color: #000;
 }
+#titulo {
+  font-style: oblique;
+  font-family: fantasy;
+  font-size: 115%;
+  color: rgb(198, 97, 5);
+  }
+ol {
+  list: none;
+  font-size: 115%;
+  font-family: serif;
+}
+
 .col-60 {
   background-color: rgba(240, 184, 14, 0.65);
   padding-left: 1.5%;
   padding-top: 1.5%;
   padding-bottom: 1.5%;
-  border-radius: solid rgba(5, 52, 158, 0.57);
+  border-radius: solid rgba(223, 171, 16, 0.87);
+  }
+
 }
 
 #juego div {
@@ -47,11 +60,7 @@ li::before {
   animation: fadein 2s;
 }
 .img {
-  padding-right: auto;
-  padding-left: auto;
-  padding-top: auto;
-  padding-bottom: auto;
-
+  padding: auto;
   width: 200px;
   height: 200px;t
 }
