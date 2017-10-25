@@ -40,7 +40,7 @@ li::before {
   color: rgb(198, 97, 5);
   }
 ol {
-  list: none;
+  list-style-type: none;
   font-size: 115%;
   font-family: serif;
 }

@@ -13,13 +13,33 @@ var posicionVacia = {
 };
 // Esta función va a chequear el Rompecabezas est&aacute; en la posición ganadora
 function chequearSiGano(){
-  
+  return grillaGanadora();
+}
+function grillaGanadora(){
+  var posicionInicialFila=grilla.length;
+  var posicionInicialColumna=grilla[0].lentgh;
+
+  var ordenActual=0;
+  var mezclaActualPiezas=0;
+
+  for(var fila=0; fila < posicionInicialFila; fila++){
+    for(var columna=0; columna < posicionInicialColumna; columna++)
+    ordenActual=grilla[fila][columna]
+    if(mezclaActualPiezas < ordenActual)
+    return false;
+    ordenActual = mezclaActualPiezas;
   }
 }
+
+
 
 // la hacen los alumnos, pueden mostrar el cartel como prefieran. Pero es importante que usen
 // esta función
 function mostrarCartelGanador(){
+  var cartelGanador= 'Excelente,'+ 'GANASTE';
+  return cartelGanador;
+  }
+  alert(mostrarCartelGanador);
 }
 
 // Intercambia posiciones grilla y en el DOM
@@ -113,3 +133,5 @@ function moverEnDireccion(direccion){
 
 
   iniciar();
+  chequearSiGano();
+  mostrarCartelGanador();
