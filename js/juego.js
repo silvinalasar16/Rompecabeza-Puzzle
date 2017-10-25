@@ -28,18 +28,13 @@ function grillaGanadora(){
     if(mezclaActualPiezas < ordenActual)
     return false;
     ordenActual = mezclaActualPiezas;
-  }
+      }
+      return true;
 }
-
-
-
 // la hacen los alumnos, pueden mostrar el cartel como prefieran. Pero es importante que usen
 // esta función
 function mostrarCartelGanador(){
-  var cartelGanador= 'Excelente,'+ 'GANASTE';
-  return cartelGanador;
-  }
-  alert(mostrarCartelGanador);
+  alert('Ganaste');
 }
 
 // Intercambia posiciones grilla y en el DOM
