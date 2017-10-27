@@ -39,12 +39,26 @@ function mostrarCartelGanador(){
 
 // Intercambia posiciones grilla y en el DOM
 function intercambiarPosiciones(fila1, columna1, fila2, columna2){
+var pieza1=grilla[fila1][columna1];
+var pieza2=grilla[fila2][columna2];
+grilla[fila2][columna2]=pieza2;
+grilla[fila1][columna1]=pieza1;
+
+var piezaJuego1=document.getElementById('piece' + pieza1);
+var piezaJuego2=doument.getElementById('piece' + pieza2);
+
+var padre=piezaJuego1.parentNode;
+var clonPiezaJuego1=piezaJuego1.cloneNode(true);
+var clonPiezaJuego2=piezaJuego2.cloneNode(true);
 
 }
 
 // Actualiza la posición de la pieza vacía
 function actualizarPosicionVacia(nuevaFila,nuevaColumna){
+var piezaVacia=posicionVacia;
+if(piezaVacia){
 
+}
 }
 
 
