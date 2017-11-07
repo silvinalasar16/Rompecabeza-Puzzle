@@ -1,6 +1,7 @@
 
 
 /*Código armado por La Foca Loca S.A. No modificar*/
+
 body {
   font-family: Arial, sans-serif;
   width: 940px;
@@ -46,13 +47,12 @@ ol {
   font-family: serif;
 }
 
-.col-60 {
+
+#juego {
   background-color: rgba(240, 184, 14, 0.65);
   border-radius: solid rgba(223, 171, 16, 0.87);
-  width: 60%;
-  padding-left: 1.5%;
-  padding-top: 1.5%;
-  padding-bottom: 1.5%;
+  width: 600px;
+  height: 600px;
 }
 
 #juego div {
@@ -60,14 +60,22 @@ ol {
   animation: fadein 2s;
   }
 
-.picture img{
-  width: 31%;
-  height: 31%;
-  margin: 0.4%;
-  float: left;
-}
+.picture {
+    width: 33.333%;
+    height: 33.333%;
+    float: left;
+  }
 
-@keyframes fadein {
+.picture img{
+    width:100%;
+    float: left;
+  }
+  footer{
+    background: rgb(240, 197, 102);
+    font-stretch: normal;
+    }
+
+  @keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
